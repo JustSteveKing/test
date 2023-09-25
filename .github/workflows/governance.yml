@@ -9,6 +9,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
     - uses: treblle/api-insights-action@v1
       with:
         schema: ./openapi.yml

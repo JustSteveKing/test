@@ -11,4 +11,4 @@ jobs:
     steps:
     - uses: treblle/api-insights-action@v1
       with:
-        schema: openapi.yml
+        schema: ./openapi.yml

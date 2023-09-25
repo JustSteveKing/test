@@ -1,0 +1,14 @@
+name: 'API Governance Test'
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  schema:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: treblle/api-insights-action@v1
+      with:
+        schema: openapi.yml
